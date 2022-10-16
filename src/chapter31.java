@@ -6,6 +6,8 @@ public class chapter31 {
         }else {
             z = x*y;
         }
+        x = 566;
+        y = 900;
         return  z;
     }
     int logic_obj(int x, int y){
@@ -15,6 +17,7 @@ public class chapter31 {
         }else {
             z = x*y;
         }
+
         return  z;
     }
     public static void main(String[] args) {
@@ -23,9 +26,10 @@ public class chapter31 {
         int c;
         c = logic(a,b);
         int c2 = logic(6,5);
+        System.out.println(a+" "+b); // values is copy in method no change.
         System.out.println(c);
         System.out.println(c2);
-// method invocation using object creation
+// method invocation using object creation without static method
         chapter31 obj = new chapter31(); // creating an object
         int v = obj.logic_obj(9,4);
         System.out.println(v);
